@@ -3,9 +3,11 @@
 layout: home
 
 hero:
-  name: "Welcome to my blog"
+  name: "Welcome to my blog"  #网站标题
   # text: "A little bit of experience"
-  tagline: A little bit of experience
+  tagline: A little bit of experience #
+  image: #背景图设置
+   src: /
   actions:
     - theme: brand
       text: go
