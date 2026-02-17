@@ -8,35 +8,37 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo :'',
+    logo: '',
     nav: [ //导航栏
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      // { text: 'Examples', link: '/markdown-examples' },
       {
         text: '前端', items: [
-          {text:'vue',link:'/'},
-          {text:'react',link:'/'},
-          // {text:'',link:'/'},
+          { text: 'vue', link: '/front/vue.md' },
+          { text: 'react', link: '/front/react.md' },
         ]
       },
       {
         text: '后端', items: [
-          {text:'java',link:'/'},
-          {text:'node.js',link:'/'},
-          {text:'python',link:'/'},
+          { text: 'java', link: '/back-end/java.md' },
+          { text: 'node.js', link: '/back-end/nodejs.md' },
+          { text: 'python', link: '/back-end/python.md' },
         ]
       },
       {
         text: '移动开发', items: [
-          {text:'安卓开发',link:'/'},
-          {text:'鸿蒙开发',link:'/'},
-          {text:'ios',link:'/'},
+          { text: '安卓开发', link: '/mobile/android.md' },
+          { text: '鸿蒙开发', link: '/mobile/harmony.md' },
+          // { text: 'ios', link: '/mobile/ios.md' },
         ]
       },
       {
+        text: 'Markdown', link: '/front/markdown.md'
+      },
+      {
         text: 'Other', items: [
-          {text:'网站部署',link:'/'},
-          {text:'vitePress',link:'/'},
+          { text: '网站部署', link: '/s' },
+          { text: 'vitePress', link: '/s' },
           // {text:'ios',link:'/'},
         ]
       },
@@ -47,27 +49,45 @@ export default defineConfig({
     sidebar: [
       {
         text: '前端',
+        collapsed: true,
         items: [
-          { text: 'vue', link: '/markdown-examples' },
-          { text: 'react', link: '/api-examples' }
+          { text: 'vue', link: '/front/vue.md' },
+          { text: 'react', link: '/front/react.md' }
         ]
       },
       {
         text: '后端',
+        collapsed: true,
         items: [
-          { text: 'Markdown Examples', items:[
-            {text :'2',link:''},
-            {text :'3',link:''},
-            {text :'4',link:''},
-          ],link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          {
+            text: 'java', items: [
+              // {text :'2',link:''},
+              // {text :'3',link:''},
+              // {text :'4',link:''},
+            ], link: '/back-end/java.md'
+          },
+          { text: 'python', link: '/back-end/python.md' },
+          { text: 'node.js', link: '/back-end/nodejs.md' }
         ]
       },
       {
         text: '移动开发',
+        collapsed: true,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '安卓开发', link: '/mobile/android.md' },
+          { text: '鸿蒙开发', link: '/mobile/harmony.md' }
+        ]
+      },
+      {
+        text: 'Markdown', link: '/front/markdown.md'
+      },
+      {
+        text: 'Other',
+        collapsed: true,
+        items: [
+          { text: '网站部署', link: '/s' },
+          { text: 'vitePress', link: '/s' },
+          // {text:'ios',link:'/'},
         ]
       },
     ],

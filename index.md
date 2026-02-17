@@ -10,7 +10,7 @@ hero:
    src: /
   actions:
     - theme: brand
-      text: go
+      text: go 
       link: /markdown-examples
     # - theme: alt
     #   text: API Examples
